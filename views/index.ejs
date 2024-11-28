@@ -1,0 +1,100 @@
+<%- include('./layouts/header') %>
+
+<div class="container mt-5">
+  <div class="text-center">
+    <h1 class="display-4 text-primary mb-4">
+      Role-Based Access Control (RBAC) UI
+    </h1>
+    <p class="lead text-muted">
+      A complete VRV-Assignment for implementing RBAC with Express.js, EJS,
+      PassportJS, and MongoDB.
+    </p>
+  </div>
+
+  <div class="card shadow mt-4">
+    <div class="card-body">
+      <h4 class="card-title text-success">Features</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Express JS:</strong> Fast and minimalist web framework
+        </li>
+        <li class="list-group-item">
+          <strong>EJS:</strong> Templating engine for rendering dynamic views
+        </li>
+        <li class="list-group-item">
+          <strong>Styling:</strong> Includes Bootstrap and custom CSS
+        </li>
+        <li class="list-group-item">
+          <strong>PassportJS:</strong> Local authentication (email & password)
+        </li>
+        <li class="list-group-item">
+          <strong>Roles:</strong> Admin, Moderator, and Client
+        </li>
+        <li class="list-group-item">
+          <strong>Authorization:</strong> Role-based route protection
+        </li>
+        <li class="list-group-item">
+          <strong>Mongoose:</strong> MongoDB ORM for database operations
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card shadow mt-4">
+    <div class="card-body">
+      <h4 class="card-title text-danger">
+        User Manual: Steps to Use the Project
+      </h4>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+          Install dependencies using <code>npm install</code>.
+        </li>
+        <li class="list-group-item">
+          Create a <code>.env</code> file with the following:
+          <pre><code>SESSION_SECRET=your_secret_key
+MONGODB_URI=your_mongo_connection_string
+DB_NAME=your_database_name</code></pre>
+        </li>
+        <li class="list-group-item">
+          Start the server using <code>npm start</code>.
+        </li>
+        <li class="list-group-item">
+          Open your browser and navigate to:
+          <a href="http://localhost:8000" target="_blank"
+            >http://localhost:8000</a
+          >.
+        </li>
+        <li class="list-group-item">
+          Authentication:
+          <ul>
+            <li>Visit <code>/auth/login</code> to log in.</li>
+            <li>Visit <code>/auth/signup</code> to create a new account.</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          Access user features at <code>/user</code>.
+        </li>
+        <li class="list-group-item">
+          Admin features are accessible at <code>/admin</code>.
+        </li>
+        <li class="list-group-item">
+          Flash messages provide feedback for actions.
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <footer class="text-center mt-4">
+    <p class="text-muted">
+      Developed with ❤️ using Express.js and MongoDB
+      |shashank100rabh295@gmail.com |
+      <a
+        href="https://github.com/shashank100rabh/role-based-access"
+        target="_blank"
+        >GitHub Repo</a
+      >
+    </p>
+  </footer>
+</div>
+
+<%- include('./layouts/footer') %>
